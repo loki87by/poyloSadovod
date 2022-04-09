@@ -1,28 +1,28 @@
 const main = document.querySelector(".main");
 
 const CARDS = [
-  { price: 550, vol: 0 },
+  // { price: 550, vol: 0 },
   { price: 600, vol: 0.7 },
   { price: 700, vol: 0 },
   { price: 600, vol: 1 },
-  { price: 500, vol: 0.7 },
+  /* { price: 500, vol: 0.7 },
   { price: 550, vol: 0.7 },
   { price: 600, vol: 0.7 },
   { price: 600, vol: 0.7 },
-  { price: 600, vol: 0.7 },
+  { price: 600, vol: 0.7 }, */
   { price: 600, vol: 0.5 },
   { price: 600, vol: 0.5 },
   { price: 600, vol: 0 },
   { price: 600, vol: 0 },
-  { price: 650, vol: 0 },
+  // { price: 650, vol: 0 },
   { price: 550, vol: 0.7 },
-  { price: 600, vol: 0.5 },
-  { price: 680, vol: 1 },
+  /* { price: 600, vol: 0.5 },
+  { price: 680, vol: 1 }, */
   { price: 600, vol: 0 },
-  { price: 550, vol: 0, only: "только blue label" },
+  // { price: 550, vol: 0, only: "только blue label" },
   { price: 600, vol: 0.7, only: "только gold" },
-  { price: 550, vol: 0 },
-  { price: 550, vol: 0 },
+  /*{ price: 550, vol: 0 },
+  { price: 550, vol: 0 }, */
 ];
 
 const createElement = (tagName, params, container, text) => {
