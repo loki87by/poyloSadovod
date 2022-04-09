@@ -45,7 +45,7 @@ const createElement = (tagName, params, container, text) => {
 
 const minCoast = (min, exp, start) => {
   const res = eval(`${min} ${exp}`);
-  if (res > start * 1.35) {
+  if (res > start * 1.5) {
     return min;
   } else {
     return res;
@@ -53,7 +53,7 @@ const minCoast = (min, exp, start) => {
 };
 
 function recursion(bet, coast) {
-  if (coast + bet > coast * 1.35) {
+  if (coast + bet > coast * 1.5) {
     return recursion(bet - 50, coast);
   } else {
     return coast + bet;
@@ -65,7 +65,7 @@ const price = (start) => {
   const margin = recursion(250, nds, start);
   const max = Math.ceil(margin / 50) * 50;
   const min = Math.floor(margin / 50) * 50;
-  if (max > start * 1.35) {
+  if (max > start * 1.5) {
     return min;
   } else {
     return max;
