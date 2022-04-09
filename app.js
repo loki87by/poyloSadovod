@@ -87,7 +87,7 @@ for (let i = 1; i <= CARDS.length; i++) {
     );
   }
   let num;
-  if (i < 10) {
+  if (CARDS[i].num < 10) {
     num = `00${CARDS[i].num}`;
   } else {
     num = `0${CARDS[i].num}`;
