@@ -1,28 +1,28 @@
 const main = document.querySelector(".main");
 
 const CARDS = [
-  // { price: 550, vol: 0 },
-  { price: 600, vol: 0.7 },
-  { price: 700, vol: 0 },
-  { price: 600, vol: 1 },
-  /* { price: 500, vol: 0.7 },
-  { price: 550, vol: 0.7 },
-  { price: 600, vol: 0.7 },
-  { price: 600, vol: 0.7 },
-  { price: 600, vol: 0.7 }, */
-  { price: 600, vol: 0.5 },
-  { price: 600, vol: 0.5 },
-  { price: 600, vol: 0 },
-  { price: 600, vol: 0 },
-  // { price: 650, vol: 0 },
-  { price: 550, vol: 0.7 },
-  /* { price: 600, vol: 0.5 },
-  { price: 680, vol: 1 }, */
-  { price: 600, vol: 0 },
-  // { price: 550, vol: 0, only: "только blue label" },
-  { price: 600, vol: 0.7, only: "только gold" },
-  /*{ price: 550, vol: 0 },
-  { price: 550, vol: 0 }, */
+  // { price: 550, vol: 0, num: 1 },
+  { price: 600, vol: 0.7, num: 2 },
+  { price: 700, vol: 0, num: 3 },
+  { price: 600, vol: 1, num: 4 },
+  /* { price: 500, vol: 0.7, num: 5 },
+  { price: 550, vol: 0.7, num: 6 },
+  { price: 600, vol: 0.7, num: 7 },
+  { price: 600, vol: 0.7, num: 8 },
+  { price: 600, vol: 0.7, num: 9 }, */
+  { price: 600, vol: 0.5, num: 10 },
+  { price: 600, vol: 0.5, num: 11 },
+  { price: 600, vol: 0, num: 12 },
+  { price: 600, vol: 0, num: 13 },
+  // { price: 650, vol: 0, num: 14 },
+  { price: 550, vol: 0.7, num: 15 },
+  /* { price: 600, vol: 0.5, num: 16 },
+  { price: 680, vol: 1, num: 17 }, */
+  { price: 600, vol: 0, num: 18 },
+  // { price: 550, vol: 0, only: "только blue label", num: 19 },
+  { price: 600, vol: 0.7, only: "только gold", num: 20 },
+  /*{ price: 550, vol: 0, num: 21 },
+  { price: 550, vol: 0, num: 22 }, */
 ];
 
 const createElement = (tagName, params, container, text) => {
@@ -88,9 +88,9 @@ for (let i = 1; i <= CARDS.length; i++) {
   }
   let num;
   if (i < 10) {
-    num = `00${i}`;
+    num = `00${CARDS[i].num}`;
   } else {
-    num = `0${i}`;
+    num = `0${CARDS[i].num}`;
   }
   createElement(
     "img",
