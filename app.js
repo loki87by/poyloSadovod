@@ -87,10 +87,10 @@ for (let i = 1; i <= CARDS.length; i++) {
     );
   }
   let num;
-  if (CARDS[i].num < 10) {
-    num = `00${CARDS[i].num}`;
+  if (CARDS[i-1].num < 10) {
+    num = `00${CARDS[i-1].num}`;
   } else {
-    num = `0${CARDS[i].num}`;
+    num = `0${CARDS[i-1].num}`;
   }
   createElement(
     "img",
